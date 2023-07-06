@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <style>
+    body {
+      background-image: url("https://img.freepik.com/free-photo/beautiful-luxury-outdoor-swimming-pool-hotel-resort_74190-7433.jpg");
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .contact-form {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      width: 400px;
+      max-width: 100%;
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    header {
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
