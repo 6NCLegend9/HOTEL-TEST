@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exquisite Stay</title>
+    <style>
+        body {
+            background: url("https://www.beaches.com/blog/content/images/2021/03/Beaches-Turks-Caicos-Overview.jpg") center/cover no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        section {
+            text-align: center;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        iframe {
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Welcome to Exquisite Stay</h1>
+        <p>Experience the ultimate luxury at Exquisite Stay, where every detail is carefully crafted to provide you with an unforgettable stay. From elegant rooms to exceptional services, we ensure that your comfort and satisfaction are our top priorities.</p>
+    </section>
+
+<section>
+        <h2>Discover a World of Luxury</h2>
+        <p>Indulge in the opulence of our world-class amenities, including a spa, rooftop pool, fine dining restaurants, and a state-of-the-art fitness center. Whether you're traveling for business or pleasure, Exquisite Stay offers an unparalleled experience that will exceed your expectations.</p>
+    </section>
+
+
+<section class="image-gallery">
+  <div id="slider" class="image-container">
+    <img class="slide" src="https://img.freepik.com/free-photo/beautiful-luxury-outdoor-swimming-pool-hotel-resort_74190-7433.jpg">
+    <img class="slide" src="https://img.freepik.com/premium-photo/beautiful-tropical-beach-sea-with-umbrella-chair-around-swimming-pool-hotel-resort-travel-vacation_1339-160559.jpg">
+    <img class="slide" src="https://img.freepik.com/free-photo/beautiful-luxury-outdoor-swimming-pool-hotel-resort_74190-7433.jpg">
+    <img class="slide" src="https://img.freepik.com/free-photo/luxury-bedroom-suite-resort-high-rise-hotel-with-working-table_105762-1783.jpg">
+  </div>
+
+  <button id="prev">Previous</button>
+  <button id="next">Next</button>
+</section>
+
+<script>
+  var slideIndex = 0;
+  var slides = document.getElementsByClassName("slide");
+
+  function showSlide(n) {
+    if (n < 0) {
+      slideIndex = slides.length - 1;
+    } else if (n >= slides.length) {
+      slideIndex = 0;
+    }
+
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slides[slideIndex].style.display = "block";
+  }
+
+  function showNextSlide() {
+    showSlide(slideIndex + 1);
+  }
+
+  function showPreviousSlide() {
+    showSlide(slideIndex - 1);
+  }
+
+  document.getElementById("prev").addEventListener("click", showPreviousSlide);
+  document.getElementById("next").addEventListener("click", showNextSlide);
+</script>
+
+
+<section>
+        <h2>Video Tour</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UJEUwEJ6gH4?autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+
+
+
+</body>
+</html>
